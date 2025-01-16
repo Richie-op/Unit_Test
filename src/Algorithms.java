@@ -1,14 +1,15 @@
 public class Algorithms {
 
-    public static char[] reverseArr (char[] arr) {
-
-        char[] reversed = new char[arr.length];
-        int j = 0;
-        for (int i = arr.length -1; i >= 0 ; i--) {
-           reversed[j] = arr[i];
-           j++;
+    public char[] reverseArray(char[] input) {
+        int left = 0;
+        int right = input.length - 1;
+        while (left < right){
+            char temp = input[left];
+            input[right] = temp;
+            left++;
+            right--;
         }
-         return reversed;
+        return input;
     }
 
     public static char reverseArr() {

@@ -2,10 +2,14 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
+        Algorithms algo = new Algorithms();
 
-        char[] test1 = {'c', 'a', 'r'};
-        char[] test2 = {'d', 'o', 'd', 'g', 'e'};
-        System.out.println(Arrays.toString( Algorithms.reverseArr(test1) ));
-        System.out.println(Arrays.toString( Algorithms.reverseArr(test2) ));
+        char[] input1 = {'c', 'h', 'e', 'v', 'y'};
+        char[] result1 = algo.reverseArray(input1);
+        System.out.println("Reversed array 1: " + new String(result1));
+
+        char[] input2 = {'d', 'o', 'd', 'g', 'e'};
+        char[] result2 = algo.reverseArray(input2);
+        System.out.println("Reversed array 2: " + new String(result2));
     }
 }
